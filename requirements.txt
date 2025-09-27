@@ -1,0 +1,11 @@
+streamlit
+openai
+faiss-cpu
+vaderSentiment
+rapidfuzz
+langchain-core
+langchain-community
+langchain-openai
+langgraph
+pydantic
+numpy
