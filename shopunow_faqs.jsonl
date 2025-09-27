@@ -1,0 +1,122 @@
+{"question": "How do I raise a new support ticket?", "answer": "Log in to your ShopUNow account, go to Support > Create Ticket, describe your issue, and submit. You will receive a ticket ID instantly.", "department": "Customer Support", "audience": "external"}
+{"question": "How do I check the status of my support ticket?", "answer": "You can track your ticket under 'My Tickets' in your account dashboard. Updates are also emailed to you.", "department": "Customer Support", "audience": "external"}
+{"question": "Do you have live chat support?", "answer": "Yes, live chat is available from 9 AM to 9 PM IST on our website and mobile app.", "department": "Customer Support", "audience": "external"}
+{"question": "How can I speak to a customer care representative?", "answer": "You can call our helpline at +91-XXXXXXXXXX during business hours.", "department": "Customer Support", "audience": "external"}
+{"question": "Can I schedule a callback at a specific time?", "answer": "Yes, when raising a ticket you can choose 'Request Callback' and select your preferred time slot.", "department": "Customer Support", "audience": "external"}
+{"question": "Do you offer WhatsApp support?", "answer": "Yes, you can message us on WhatsApp at +91-XXXXXXXXXX for order and return queries.", "department": "Customer Support", "audience": "external"}
+{"question": "How quickly are urgent issues resolved?", "answer": "Urgent issues are prioritized and usually resolved within 4 working hours.", "department": "Customer Support", "audience": "external"}
+{"question": "Can I get multilingual support?", "answer": "Yes, we currently provide support in English, Hindi, Tamil, and Kannada.", "department": "Customer Support", "audience": "external"}
+{"question": "Is there support for NRI customers?", "answer": "Yes, NRI customers can email nri.support@shopunow.com for priority handling.", "department": "Customer Support", "audience": "external"}
+{"question": "Can I contact support outside business hours?", "answer": "Yes, you can raise tickets anytime. They will be addressed once business hours resume.", "department": "Customer Support", "audience": "external"}
+{"question": "What if I don’t get a response within 24 hours?", "answer": "If not resolved in 24 hours, your query is auto-escalated to a supervisor.", "department": "Customer Support", "audience": "external"}
+{"question": "How do I give feedback on unresolved issues?", "answer": "Email quality@shopunow.com with your ticket ID and feedback.", "department": "Customer Support", "audience": "external"}
+{"question": "Can I request a refund through customer support?", "answer": "Yes, support can initiate refund requests after validating your order details.", "department": "Customer Support", "audience": "external"}
+{"question": "Can customer support help me cancel my order?", "answer": "Yes, customer support can assist with cancellations if the order is not yet shipped.", "department": "Customer Support", "audience": "external"}
+{"question": "How do I share screenshots or documents with support?", "answer": "When creating a ticket, you can upload attachments up to 10MB in size.", "department": "Customer Support", "audience": "external"}
+{"question": "Is there support for corporate clients?", "answer": "Yes, bulk/corporate queries are redirected to our Business Sales team.", "department": "Customer Support", "audience": "external"}
+{"question": "Can support reset my account password?", "answer": "Yes, they can send you a secure password reset link.", "department": "Customer Support", "audience": "external"}
+{"question": "Can I chat with a human instead of a bot?", "answer": "Yes, during business hours you can request 'Talk to a human' in chat.", "department": "Customer Support", "audience": "external"}
+{"question": "How do I know if my support ticket is resolved?", "answer": "A resolution mail is sent when your ticket is closed. You can also view status in 'My Tickets'.", "department": "Customer Support", "audience": "external"}
+{"question": "Can I reopen a closed ticket?", "answer": "Yes, tickets can be reopened within 7 days if the issue recurs.", "department": "Customer Support", "audience": "external"}
+{"question": "Do you provide home visit support?", "answer": "For select appliances, home visits may be arranged by the brand partner.", "department": "Customer Support", "audience": "external"}
+{"question": "Can I track past support interactions?", "answer": "Yes, your account dashboard maintains a history of all tickets and chats.", "department": "Customer Support", "audience": "external"}
+{"question": "How do I contact senior management?", "answer": "Escalations beyond Level 2 can be sent to management@shopunow.com.", "department": "Customer Support", "audience": "external"}
+{"question": "What if I don’t receive help for a damaged product?", "answer": "If unresolved, escalate with photos of the damaged product to escalation@shopunow.com.", "department": "Customer Support", "audience": "external"}
+{"question": "What are the available payment options?", "answer": "We support UPI, debit/credit cards, wallets (Paytm, PhonePe, Google Pay, Amazon Pay), EMI on cards, and cash on delivery.", "department": "Payments & Billing", "audience": "external"}
+{"question": "Can I pay with Amex or Diners cards?", "answer": "Yes, American Express and Diners Club cards are accepted.", "department": "Payments & Billing", "audience": "external"}
+{"question": "Do you accept RuPay cards?", "answer": "Yes, RuPay debit and credit cards are supported.", "department": "Payments & Billing", "audience": "external"}
+{"question": "How do I update my saved payment method?", "answer": "You can manage saved cards and UPI IDs in 'My Wallet' under your account.", "department": "Payments & Billing", "audience": "external"}
+{"question": "What happens if my COD order is rejected?", "answer": "If you reject COD delivery, future COD eligibility may be restricted.", "department": "Payments & Billing", "audience": "external"}
+{"question": "Are EMI options available for debit cards?", "answer": "Yes, debit card EMI is available for select banks on orders above INR 5,000.", "department": "Payments & Billing", "audience": "external"}
+{"question": "Can I use multiple payment methods on one order?", "answer": "Currently, partial or split payments are not supported.", "department": "Payments & Billing", "audience": "external"}
+{"question": "Can I use store credit for purchases?", "answer": "Yes, store credits can be applied at checkout under 'Use Credits'.", "department": "Payments & Billing", "audience": "external"}
+{"question": "How do I download my payment receipts?", "answer": "Receipts and invoices are available under 'My Orders' > 'Download Invoice'.", "department": "Payments & Billing", "audience": "external"}
+{"question": "How are refunds issued for COD orders?", "answer": "Refunds for COD orders are issued to your bank account or UPI ID within 7 business days.", "department": "Payments & Billing", "audience": "external"}
+{"question": "What if I paid twice for the same order?", "answer": "Raise a support ticket with transaction references. Duplicate payments are refunded within 5 days.", "department": "Payments & Billing", "audience": "external"}
+{"question": "Do you support auto-debit subscriptions?", "answer": "Yes, auto-debit is available via UPI mandates and select credit cards.", "department": "Payments & Billing", "audience": "external"}
+{"question": "Is COD available in all locations?", "answer": "COD is available for most pin codes, but restricted in remote and high-value orders.", "department": "Payments & Billing", "audience": "external"}
+{"question": "How do I apply a coupon code?", "answer": "Enter your coupon code at checkout. Discounted amount is shown before final payment.", "department": "Payments & Billing", "audience": "external"}
+{"question": "Why is my coupon not applying?", "answer": "Coupons may have minimum order value, expiry, or product restrictions. Check terms in 'Offers'.", "department": "Payments & Billing", "audience": "external"}
+{"question": "Can I use gift cards?", "answer": "Yes, ShopUNow gift cards can be redeemed at checkout.", "department": "Payments & Billing", "audience": "external"}
+{"question": "How do I add a new UPI ID?", "answer": "At checkout, select UPI, click 'Add New ID', and complete verification.", "department": "Payments & Billing", "audience": "external"}
+{"question": "Are international wallets supported?", "answer": "Currently, only Indian wallets are supported.", "department": "Payments & Billing", "audience": "external"}
+{"question": "Do you provide detailed tax invoices?", "answer": "Yes, GST invoices are available for all orders with GSTIN added to your profile.", "department": "Payments & Billing", "audience": "external"}
+{"question": "What if I need a refund to a different account?", "answer": "Refunds are credited to the original payment method only.", "department": "Payments & Billing", "audience": "external"}
+{"question": "Can I delay my payment?", "answer": "For BNPL, due dates are managed by the BNPL provider. ShopUNow does not extend due dates.", "department": "Payments & Billing", "audience": "external"}
+{"question": "How do I know if my EMI is approved?", "answer": "Your bank or card provider confirms EMI status at checkout and sends an SMS confirmation.", "department": "Payments & Billing", "audience": "external"}
+{"question": "What is the maximum COD order value?", "answer": "COD is allowed for orders up to INR 10,000.", "department": "Payments & Billing", "audience": "external"}
+{"question": "What security measures protect my payments?", "answer": "We use 128-bit SSL, tokenized card storage, and PCI DSS-certified gateways.", "department": "Payments & Billing", "audience": "external"}
+
+{"question": "How do I reset my VPN password?", "answer": "Employees can reset VPN passwords using the IT Helpdesk portal with their employee ID.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "How can I get hardware support for my laptop?", "answer": "Raise a ticket on the IT Helpdesk portal for hardware support requests.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "How do I contact HR for payroll issues?", "answer": "You can email payroll@shopunow.com or raise a request on the HR portal.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "What is the process for onboarding new employees?", "answer": "HR provides an onboarding checklist and access credentials on joining day.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "Can I request software installation on my work laptop?", "answer": "Yes, create a software request ticket on the IT Helpdesk portal.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "How do I apply for leave?", "answer": "You can apply for leave via the HRMS portal with manager approval.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "How do I access my payslip?", "answer": "Payslips are available for download on the HR portal.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "What should I do if my system crashes?", "answer": "Contact IT Helpdesk immediately; a replacement system will be arranged.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "Can I connect my personal device to office VPN?", "answer": "No, only company-approved devices are allowed for VPN access.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "Where do I find employee policies?", "answer": "All policies are listed in the Employee Handbook on the HRMS portal.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "How do I report harassment?", "answer": "You can confidentially report workplace harassment at ethics@shopunow.com.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "How do I get access to internal tools?", "answer": "Request access through your manager and raise an IT ticket.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "Can I update my bank details for payroll?", "answer": "Yes, submit updated details through the HR portal.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "How do I reset my email password?", "answer": "Use the 'Forgot Password' option on the email portal or contact IT Helpdesk.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "What is the process to exit the company?", "answer": "Submit a resignation letter through the HRMS portal, and HR will schedule exit formalities.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "Can I request an employment verification letter?", "answer": "Yes, raise a request through the HR portal under 'Employee Services'.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "How do I update my contact information?", "answer": "Update phone number and address in the HRMS portal profile section.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "Where do I raise a ticket for ID card replacement?", "answer": "Use the IT Helpdesk portal and select 'Access Card' as the request type.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "What is the grievance redressal process?", "answer": "File grievances via HRMS > Grievance module. HR ensures resolution in 7 working days.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "Who do I contact for PF and ESI queries?", "answer": "Write to pf@shopunow.com or esi@shopunow.com.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "Can HR help me with tax-saving proofs?", "answer": "Yes, upload your proofs on the payroll portal during the investment declaration cycle.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "How can I reset my HRMS login?", "answer": "Click 'Forgot Password' on HRMS login or email hrms.support@shopunow.com.", "department": "HR & IT Helpdesk", "audience": "internal"}
+{"question": "How do I request training access?", "answer": "Your manager can nominate you, and HR grants LMS access.", "department": "HR & IT Helpdesk", "audience": "internal"}
+
+{"question": "How do I create a purchase requisition?", "answer": "Employees can raise purchase requisitions via the Procurement portal.", "department": "Procurement", "audience": "internal"}
+{"question": "How can I track my requisition status?", "answer": "Track requisition status in the Procurement portal dashboard.", "department": "Procurement", "audience": "internal"}
+{"question": "Who approves purchase requests?", "answer": "Department managers and the Finance team approve purchase requests.", "department": "Procurement", "audience": "internal"}
+{"question": "Can I request urgent procurement?", "answer": "Yes, select 'Urgent' when raising a requisition. It requires director-level approval.", "department": "Procurement", "audience": "internal"}
+{"question": "How do I request vendor onboarding?", "answer": "Submit vendor details in the Vendor Onboarding section of the portal.", "department": "Procurement", "audience": "internal"}
+{"question": "What documents are required for vendor registration?", "answer": "Vendors must submit PAN, GST, and bank details for registration.", "department": "Procurement", "audience": "internal"}
+{"question": "How long does procurement usually take?", "answer": "Procurement requests typically take 7–10 business days to complete.", "department": "Procurement", "audience": "internal"}
+{"question": "How do I cancel a requisition?", "answer": "Cancel requisitions directly from your Procurement portal dashboard.", "department": "Procurement", "audience": "internal"}
+{"question": "Can I reuse old vendors?", "answer": "Yes, approved vendors remain available for reuse.", "department": "Procurement", "audience": "internal"}
+{"question": "Where can I see procurement policies?", "answer": "Policies are available in the 'Procurement Guidelines' document on the portal.", "department": "Procurement", "audience": "internal"}
+{"question": "How do I report procurement fraud?", "answer": "Fraud can be reported confidentially to audit@shopunow.com.", "department": "Procurement", "audience": "internal"}
+{"question": "Can I request office supplies?", "answer": "Yes, use the Procurement portal to raise requests for office supplies.", "department": "Procurement", "audience": "internal"}
+{"question": "What happens if vendor payment is delayed?", "answer": "The Finance team coordinates directly with vendors to resolve delayed payments.", "department": "Procurement", "audience": "internal"}
+{"question": "How do I request a quotation?", "answer": "You can request quotations from pre-approved vendors via the portal.", "department": "Procurement", "audience": "internal"}
+{"question": "Who do I contact for procurement training?", "answer": "Email procurement.training@shopunow.com for training schedules.", "department": "Procurement", "audience": "internal"}
+{"question": "How do I onboard a new contractor?", "answer": "Submit contractor details under 'New Vendor Request' in the portal.", "department": "Procurement", "audience": "internal"}
+{"question": "Can I track vendor performance?", "answer": "Yes, performance reports are available in the vendor dashboard.", "department": "Procurement", "audience": "internal"}
+{"question": "What is the process for capex approval?", "answer": "Capital expenditure requests require CFO and board approval.", "department": "Procurement", "audience": "internal"}
+{"question": "How do I request a budget increase?", "answer": "Submit a budget revision form through Procurement portal.", "department": "Procurement", "audience": "internal"}
+
+{"question": "What is the return policy?", "answer": "You can return items within 10 days of delivery for a full refund.", "department": "Orders & Returns", "audience": "external"}
+{"question": "How do I initiate a return?", "answer": "Log in to your account, go to 'My Orders', and click 'Initiate Return'.", "department": "Orders & Returns", "audience": "external"}
+{"question": "Can I exchange a product?", "answer": "Yes, you can exchange a product for a different size or color within 10 days.", "department": "Orders & Returns", "audience": "external"}
+{"question": "Do you provide free return pickup?", "answer": "Yes, we offer free doorstep pickup for eligible returns.", "department": "Orders & Returns", "audience": "external"}
+{"question": "What if I receive a damaged product?", "answer": "You can request a replacement or refund by uploading pictures of the damaged item.", "department": "Orders & Returns", "audience": "external"}
+{"question": "How long do returns take to process?", "answer": "Returns are processed within 5–7 business days after pickup.", "department": "Orders & Returns", "audience": "external"}
+{"question": "Are all items returnable?", "answer": "Most items are returnable, except personal care, perishable goods, and clearance items.", "department": "Orders & Returns", "audience": "external"}
+{"question": "Can I track my return request?", "answer": "Yes, you can track return status in the 'My Orders' section.", "department": "Orders & Returns", "audience": "external"}
+{"question": "Do you refund shipping charges?", "answer": "Shipping charges are refunded only if the product was defective or wrong.", "department": "Orders & Returns", "audience": "external"}
+{"question": "Can I change the pickup address for return?", "answer": "Yes, you can update the pickup address before scheduling return.", "department": "Orders & Returns", "audience": "external"}
+{"question": "What if I miss the return pickup?", "answer": "You can reschedule pickup from your order page.", "department": "Orders & Returns", "audience": "external"}
+{"question": "Do you offer instant refunds?", "answer": "Instant refunds are available as wallet credit. Bank refunds take 5–7 days.", "department": "Orders & Returns", "audience": "external"}
+{"question": "How do I cancel a return request?", "answer": "Go to 'My Orders' and cancel the request before pickup is scheduled.", "department": "Orders & Returns", "audience": "external"}
+{"question": "Can I return multiple items together?", "answer": "Yes, you can bundle multiple items from the same order in one return.", "department": "Orders & Returns", "audience": "external"}
+{"question": "What if my return is rejected?", "answer": "If rejected, the item will be sent back to you with an explanation email.", "department": "Orders & Returns", "audience": "external"}
+{"question": "What is the exchange policy?", "answer": "Products can be exchanged within 10 days of delivery for eligible categories.", "department": "Orders & Returns", "audience": "external"}
+{"question": "Do you offer return drop-off points?", "answer": "Yes, you can drop off returns at select partner locations if pickup is unavailable.", "department": "Orders & Returns", "audience": "external"}
+{"question": "What documents are needed for return pickup?", "answer": "Keep the invoice or return slip handy for pickup.", "department": "Orders & Returns", "audience": "external"}
+{"question": "How do I get updates on my return?", "answer": "Notifications are sent via SMS and email at each stage of return.", "department": "Orders & Returns", "audience": "external"}
+{"question": "Can I return international orders?", "answer": "Currently, returns are supported for domestic orders only.", "department": "Orders & Returns", "audience": "external"}
+{"question": "What happens if I return after 10 days?", "answer": "Late returns are not accepted unless approved under warranty claims.", "department": "Orders & Returns", "audience": "external"}
+{"question": "Can I request pickup at a different location?", "answer": "Yes, you can change the pickup address once per return request.", "department": "Orders & Returns", "audience": "external"}
+{"question": "How to apply for leaves?", "answer": "You can apply for leave via the HRMS portal with manager approval.", "department": "HR & IT Helpdesk"}
+{"question": "What is the leave policy?", "answer": "Employees are entitled to 20 days of annual leave, with manager approval required.", "department": "HR & IT Helpdesk"}
+{"question": "How many leaves can I take?", "answer": "Employees can take up to 20 days of annual leave per year. Carryover is subject to approval.", "department": "HR & IT Helpdesk"}
+{"question": "What is the return policy?", "answer": "Products can be returned within 30 days of delivery if unused and in original packaging.", "department": "Orders & Returns"}
+{"question": "How many days for return?", "answer": "Returns are processed within 5–7 business days after pickup.", "department": "Orders & Returns"}
+{"question": "My return is delayed", "answer": "If your return is delayed, please check the order page or contact support for updates.", "department": "Orders & Returns"}
+{"question": "My order is delayed", "answer": "If your order is delayed, please check your tracking page or contact support for assistance.", "department": "Orders & Returns"}
