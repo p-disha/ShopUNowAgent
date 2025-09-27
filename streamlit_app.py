@@ -1,5 +1,5 @@
 # ============================================
-# app.py — ShopUNow AI Assistant (Streamlit Cloud)
+# app.py — ShopUNow AI Assistant (Streamlit Cloud, Stable)
 # ============================================
 
 import os
@@ -31,13 +31,15 @@ _FAQ_DOCS: List[Document] = []
 _FAQ_LOCK = threading.Lock()
 
 def resolve_faq_path() -> str:
+    """Look for FAQ file in project root or /data."""
     candidates = ["shopunow_faqs.jsonl", os.path.join("data", "shopunow_faqs.jsonl")]
     for c in candidates:
         if os.path.exists(c):
             return c
-    raise FileNotFoundError("❌ shopunow_faqs.jsonl not found — upload it via sidebar.")
+    raise FileNotFoundError("❌ shopunow_faqs.jsonl not found — please commit it next to app.py or upload via sidebar.")
 
 def load_faq_documents(path: str) -> List[Document]:
+    """Read JSONL FAQs into LangChain documents."""
     docs = []
     with open(path, "r", encoding="utf-8") as f:
         for line in f:
@@ -59,6 +61,7 @@ def load_faq_documents(path: str) -> List[Document]:
     return docs
 
 def build_faq_store(docs: List[Document]) -> FAISS:
+    """Build FAISS store with OpenAI embeddings."""
     emb = OpenAIEmbeddings(model="text-embedding-ada-002")
     dim = len(emb.embed_query("hello"))
     index = faiss.IndexFlatIP(dim)
@@ -67,6 +70,7 @@ def build_faq_store(docs: List[Document]) -> FAISS:
     return store
 
 def get_faq_vector_store() -> Tuple[FAISS, List[Document]]:
+    """Lazy initializer for FAQ store."""
     global _FAQ_VECTOR_STORE, _FAQ_DOCS
     if _FAQ_VECTOR_STORE:
         return _FAQ_VECTOR_STORE, _FAQ_DOCS
@@ -79,7 +83,7 @@ def get_faq_vector_store() -> Tuple[FAISS, List[Document]]:
     return _FAQ_VECTOR_STORE, _FAQ_DOCS
 
 # =========================================================
-# 2️⃣ Agent Logic (Intent, Dept, Sentiment, RAG)
+# 2️⃣ Agent Logic
 # =========================================================
 random.seed(42)
 np.random.seed(42)
@@ -141,39 +145,43 @@ def tool_node(state: AgentState)->Dict[str,Any]:
     q=state.user_input.strip()
     dept,conf,intent=state.department,state.dept_confidence,state.intent
     if intent=="order_status":
-        return {"answer":"Your order is being processed.","tools_used":["order_status"],"confidence":0.9}
+        return {"answer":"Your order is being processed.","tools_used":["order_status"],"confidence":float(0.9)}
     if intent=="return_create":
-        return {"answer":"Return initiated. You'll get pickup details by email.","tools_used":["return"],"confidence":0.9}
+        return {"answer":"Return initiated. You'll get pickup details by email.","tools_used":["return"],"confidence":float(0.9)}
     if intent=="human_escalation":
-        return {"answer":"Escalating to human support.","tools_used":["escalation"],"confidence":0.3}
+        return {"answer":"Escalating to human support.","tools_used":["escalation"],"confidence":float(0.3)}
     if intent=="rag":
         if not dept or conf<0.6:
-            return {"answer":"This may relate to multiple areas. Escalating.","tools_used":["escalation"],"confidence":0.3}
+            return {"answer":"This may relate to multiple areas. Escalating.","tools_used":["escalation"],"confidence":float(0.3)}
         try:
             store,docs=get_faq_vector_store()
             results=store.similarity_search_with_score(q,k=5)
-            filtered=[(d,s) for d,s in results if d.metadata.get("department")==dept] or results
-            if not filtered: return {"answer":"No relevant info found.","tools_used":["escalation"],"confidence":0.2}
+            filtered=[(d,float(s)) for d,s in results if d.metadata.get("department")==dept] or [(d,float(s)) for d,s in results]
+            if not filtered:
+                return {"answer":"No relevant info found.","tools_used":["escalation"],"confidence":float(0.2)}
             doc,sim=filtered[0]
-            th=DEPT_SIM_THRESHOLDS.get(dept,0.8)
+            sim=float(sim)
+            th=float(DEPT_SIM_THRESHOLDS.get(dept,0.8))
             if sim<th:
-                best=None;bf=0
+                best=None;bf=0.0
                 for d in docs:
                     fs=fuzz.partial_ratio(q,d.metadata.get("question",""))/100.0
-                    if fs>bf: best, bf = d, fs
+                    if fs>bf: best,bf=d,fs
                 if best and bf>=0.92:
-                    return {"answer":extract_answer_text(best.page_content),"tools_used":["fuzzy"],"confidence":bf}
+                    return {"answer":extract_answer_text(best.page_content),"tools_used":["fuzzy"],"confidence":float(bf)}
                 return {"answer":"I'm not confident. Escalating.","tools_used":["escalation"],"confidence":sim}
             return {"answer":extract_answer_text(doc.page_content),"tools_used":["rag"],"confidence":sim}
         except Exception as e:
             traceback.print_exc()
-            return {"answer":f"Search error: {e}","tools_used":["error"],"confidence":0.0}
-    return {"answer":"Please rephrase your question.","tools_used":["fallback"],"confidence":0.3}
+            return {"answer":f"Search error: {e}","tools_used":["error"],"confidence":float(0.0)}
+    return {"answer":"Please rephrase your question.","tools_used":["fallback"],"confidence":float(0.3)}
 
 graph=StateGraph(AgentState)
 graph.add_node("route",route_intent)
 graph.add_node("tool",tool_node)
-graph.add_edge(START,"route"); graph.add_edge("route","tool"); graph.add_edge("tool",END)
+graph.add_edge(START,"route")
+graph.add_edge("route","tool")
+graph.add_edge("tool",END)
 app=graph.compile(checkpointer=MemorySaver())
 
 def ask(query:str)->str:
@@ -186,16 +194,21 @@ def ask(query:str)->str:
 st.set_page_config(page_title="ShopUNow Assistant", layout="centered")
 st.title("🛍️ ShopUNow AI Assistant")
 
-# Sidebar: Upload + Testing
+# Sidebar setup
 st.sidebar.header("⚙️ Setup & Testing")
 
-uploaded = st.sidebar.file_uploader("Upload shopunow_faqs.jsonl", type="jsonl")
-if uploaded:
-    with open("shopunow_faqs.jsonl","wb") as f:
-        f.write(uploaded.read())
-    st.sidebar.success("✅ Uploaded! Refresh page.")
+faq_path = "shopunow_faqs.jsonl"
+if os.path.exists(faq_path):
+    st.sidebar.success("✅ FAQ file found and loaded.")
+else:
+    st.sidebar.warning("⚠️ No FAQ file found. Please upload one.")
+    uploaded = st.sidebar.file_uploader("Upload shopunow_faqs.jsonl", type="jsonl")
+    if uploaded:
+        with open(faq_path,"wb") as f: f.write(uploaded.read())
+        st.sidebar.success("✅ Uploaded! Refresh the page.")
+        st.stop()
 
-# Run automated test queries
+# Run built-in test queries
 if st.sidebar.button("🧪 Run Built-in Tests"):
     st.sidebar.info("Running test queries...")
     test_queries = [
